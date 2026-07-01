@@ -1,0 +1,49 @@
+.registro-container{
+    min-height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f4f6f9;
+}
+
+.registro-box{
+    width: 350px;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+.registro-box h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#1e3a8a;
+}
+
+.registro-box input{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    outline:none;
+}
+
+.registro-box input:focus{
+    border-color:#1e3a8a;
+}
+
+.registro-box button{
+    width:100%;
+    padding:10px;
+    border:none;
+    background:#1e3a8a;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.registro-box button:hover{
+    background:#2563eb;
+}

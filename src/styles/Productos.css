@@ -1,0 +1,65 @@
+.productos-container{
+    padding: 30px;
+    background:#f4f6f9;
+    min-height: 100vh;
+}
+
+.titulo{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color:#1e3a8a;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    padding:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.categoria{
+    font-size:13px;
+    color:#666;
+}
+
+.precio{
+    color:#16a34a;
+    font-weight:bold;
+    margin:8px 0;
+    font-size:18px;
+}
+
+.stock{
+    font-size:13px;
+    margin-bottom:10px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    border:none;
+    background:#1e3a8a;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#2563eb;
+}
