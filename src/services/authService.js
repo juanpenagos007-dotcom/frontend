@@ -1,13 +1,11 @@
+import api from "../config/api";
+
+export const login = async (datos) => {
+    const { data } = await api.post("/Auth/login", datos);
+    return data;
+};
+
 export const registrar = async (datos) => {
-    const res = await fetch("http://proyapi802.somee.com/api/Auth/registrar", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(datos)
-    });
-
-    console.log("STATUS:", res.status);
-
-    return await res.json();
+    const { data } = await api.post("/Auth/registrar", datos);
+    return data;
 };
