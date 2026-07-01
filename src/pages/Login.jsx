@@ -24,7 +24,6 @@ export default function Login() {
 
             const res = await login({ email, password });
 
-            // backend devuelve: token, nombre, roles
             localStorage.setItem("token", res.token);
             localStorage.setItem("nombre", res.nombre);
             localStorage.setItem("roles", JSON.stringify(res.roles));
@@ -74,6 +73,14 @@ export default function Login() {
                 disabled={loading}
             >
                 {loading ? "Entrando..." : "Login"}
+            </button>
+
+            {/* BOTÓN NUEVO */}
+            <button
+                className="btn btn-link w-100 mt-2"
+                onClick={() => navigate("/registro")}
+            >
+                ¿No tienes cuenta? Regístrate
             </button>
 
         </div>
